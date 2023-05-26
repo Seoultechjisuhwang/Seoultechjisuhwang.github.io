@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>배달의 토끼</title>
+<title>배달의 토끼 </title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,6 +9,38 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      </script>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+    <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
 
 <style>
     body {
@@ -33,58 +65,17 @@
   .topnav .icon {
     display: none;
   }
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  .dropdown .dropbtn {
-    font-size: 17px;
-    border: none;
-    outline: none;
-    color: rgb(0, 0, 0);
-    padding: 14px 30px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-  }
   .topnav a:hover,
   .dropdown:hover .dropbtn {
     background-color: rgb(236, 180, 181);
     color: rgb(0, 0, 0);
   }
-  .dropdown-content a:hover {
-    background-color: rgba(236, 180, 181, 0.552);
-    color: black;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child),
-    .dropdown .dropbtn {
-      display: none;
-    }
     .topnav a.icon {
       float: right;
       display: block;
     }
-  }
     
     .topnav.responsive {
       position: relative;
@@ -110,26 +101,8 @@
       width: 100%;
       text-align: left;
     }
-  
-</style>
-    
-</head>
-<body>
-    <ul class="nav nav-tabs">
-        <div class="topnav" id="myTopnav">
-      <a href="https://shh3020.github.io/"><img src="img1.png" width="200" height="70"></a>
-      <a href="https://seoultechjisuhwang.github.io/">회사 소개</a>
-      <a href="https://himdula.github.io/">서비스 소개</a>
-      <a href="https://grjkgfuy2.github.io/">배토페이</a>
-      <a href="https://ewruiofsd.github.io/#%EC%A0%9C%ED%9C%B4%EC%97%85%EC%B2%B4%20%EC%95%88%EB%82%B4">제휴업체 안내</a>
-    </div>
-   <div class="#로그인">
-      <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <style>
-          body {
-            font-family: Arial, Helvetica, sans-serif;
-          }
+    }
+ 
           /* Full-width input fields */
           input[type=text],
           input[type=password] {
@@ -169,6 +142,7 @@
           }
           .container {
             padding: 16px;
+              width: auto;
           }
           span.psw {
             float: right;
@@ -250,72 +224,8 @@
               width: 100%;
             }
           }
-      </style>
-      </head>
-   </div>
-   <body>
-   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="qjxms">Login</button>
-   <div id="id01" class="modal">
-      <form class="modal-content animate" action="/action_page.php" method="post">
-         <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="토끼.jpg" style="width: 20%;" alt="토끼">
-         </div>
-         <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-            <button type="submit">Login</button>
-            <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me </label>
-         </div>
-         <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-         </form>
-      </div>
-      <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
-      </script>
-      </body>
-   </div>
-</div>
-<script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
-</body>
-
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-</script>
-
-</ul>
-
-<style>
     
-
-    .wrap {
+     .wrap {
         font-size:20px;
         font-family:fantasy;
         font-weight:bold;
@@ -447,9 +357,46 @@ scrollbar-width: none; /* Firefox */
 display: none; /* Chrome, Safari, Opera*/
 }
 
+  
 </style>
+    
+</head>
+ 
 
 <body>
+      <ul class="nav nav-tabs">
+        <div class="topnav" id="myTopnav">
+      <a href="https://shh3020.github.io/"><img src="img1.png" width="200" height="70"></a>
+      <a href="https://seoultechjisuhwang.github.io/">회사 소개</a>
+      <a href="https://himdula.github.io/">서비스 소개</a>
+      <a href="https://grjkgfuy2.github.io/">배토페이</a>
+      <a href="https://ewruiofsd.github.io/#%EC%A0%9C%ED%9C%B4%EC%97%85%EC%B2%B4%20%EC%95%88%EB%82%B4">제휴업체 안내</a>
+    </div>
+   <div class="#로그인">
+  
+   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="qjxms">Login</button>
+   <div id="id01" class="modal">
+      <form class="modal-content animate" action="/action_page.php" method="post">
+         <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="토끼.jpg" style="width: 20%;" alt="토끼">
+         </div>
+         <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Login</button>
+            <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me </label>
+         </div>
+         <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+         </form>
+      </div>
+   </div>
+       
+    </ul>
 
     <div class="line"></div>
     <br>
